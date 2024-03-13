@@ -1,7 +1,7 @@
 import os
 os.system('pwd;ls')
-os.system('xtuner train ./config/internlm_chat_7b_qlora_oasst1_e3_copy.py')
-
+os.system('cd config;xtuner train ./config/internlm_chat_7b_qlora_oasst1_e3_copy.py')
+os.system("cd code;git clone https://gitee.com/internlm/InternLM.git;cd InternLM;git checkout 3028f07cb79e5b1d7342f4ad8d11efad3fd13d17")
 # 定义要执行的所有命令
 commands = """
 mkdir ./config/work_dirs/hf;
