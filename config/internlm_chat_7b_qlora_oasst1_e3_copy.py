@@ -21,10 +21,10 @@ from xtuner.utils import PROMPT_TEMPLATE
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-pretrained_model_name_or_path = '/root/personal_assistant/model/Shanghai_AI_Laboratory/internlm-chat-7b'
+pretrained_model_name_or_path = 'Shanghai_AI_Laboratory/internlm-chat-7b'
 
 # Data
-data_path = '/root/personal_assistant/data/personal_assistant.json'
+data_path = 'data/personal_assistant.json'
 prompt_template = PROMPT_TEMPLATE.internlm_chat
 max_length = 512
 pack_to_max_length = True

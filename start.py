@@ -2,6 +2,15 @@ import os
 os.system('pwd;ls')
 # 定义要执行的所有命令
 commands = """
+bash;
+conda create --name personal_assistant --clone=/root/share/conda_envs/internlm-base;
+conda activate personal_assistant;
+cd ~;
+mkdir /root/personal_assistant && cd /root/personal_assistant;
+mkdir /root/personal_assistant/xtuner019 && cd /root/personal_assistant/xtuner019;
+git clone -b v0.1.9  https://github.com/InternLM/xtuner;
+cd xtuner;
+pip install -e '.[all]';
 cd /home/xlab-app-center/xtuner019/xtuner;
 pip install -e '.[all]';
 xtuner train /home/xlab-app-center/config/internlm_chat_7b_qlora_oasst1_e3_copy.py;
