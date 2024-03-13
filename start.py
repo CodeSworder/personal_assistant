@@ -1,5 +1,5 @@
 import os
-os.system('pwd')
+os.system('pwd;ls')
 os.system('xtuner train ./config/internlm_chat_7b_qlora_oasst1_e3_copy.py')
 
 # 定义要执行的所有命令
