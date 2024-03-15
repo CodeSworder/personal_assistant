@@ -8,7 +8,7 @@ Please refer to these links below for more information:
 """
 
 from dataclasses import asdict
-
+from openxlab.model import download
 import streamlit as st
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -116,4 +116,6 @@ def main():
 
 
 if __name__ == "__main__":
+    
+    download(model_repo='mjh985/personal_assistant', model_name='personal_assistant', output='config/work_dirs/')
     main()
